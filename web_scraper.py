@@ -10,9 +10,9 @@ driver = webdriver.Firefox()
 driver.get("https://x.com/i/flow/login")
 
 # wait for the input element to be present and send keys
-element = WebDriverWait(driver, 10).until(
+element = WebDriverWait(driver, 10).until(  
     EC.presence_of_element_located((By.CSS_SELECTOR, ".r-30o5oe"))
-)
+) #oombu
 element.send_keys("8072828653")
 
 # Handle potential popup
